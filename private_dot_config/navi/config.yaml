@@ -1,0 +1,14 @@
+style:
+  tag:
+    color: green
+    width_percentage: 20
+  comment:
+    color: blue
+    width_percentage: 50
+  snippet:
+    color: red
+    width_percentage: 30
+
+client:
+  tealdeer: true
+
