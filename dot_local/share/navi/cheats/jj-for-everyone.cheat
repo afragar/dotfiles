@@ -1,0 +1,7 @@
+% jj-for-everyone
+
+# Set tutorial progress to start of some chapter
+curl https://jj-for-everyone.github.io/reset.sh | bash -s <chapter>
+
+$ chapter: echo "install initialize log make_changes commit remote update_bookmark clone github branch show merge ignore rebase more_bookmarks navigate undo track conflict abandon restore complete" | tr ' ' '\n'
+

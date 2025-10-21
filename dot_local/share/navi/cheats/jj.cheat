@@ -1,0 +1,44 @@
+% jj
+
+# Initialize new repo with .git and .jj directories
+jj git init <repo-path>
+
+# Initialize new bare repo with .git contents
+git init --bare -b main <repo-path>
+
+# Add .jj directory to repo with existing .git directory
+jj git init --colocate
+
+# Show version history
+jj log
+
+# Show complete version history
+jj log --revisions 'all()'
+
+# Briefly describe working copy and create new working copy
+jj commit -m <description>
+
+# Fully describe working copy and create new working copy
+jj commit
+
+# Connect to remote
+jj git remote add <name> <path>
+
+# Show connected remotes
+jj git remote list
+
+# Create bookmark
+jj bookmark create <bookmark> --revision <changeID>
+
+# Push bookmark to remote
+jj git push --bookmark <bookmark> --allow-new
+
+# Push default bookmark to remote
+jj git push
+
+# Move bookmark "main" to parent of working copy
+jj bookmark move main --to @-
+
+# Create local copy of remote repo
+jj git clone <source> <destination>
+

@@ -1,0 +1,18 @@
+% navi
+
+# Show cheatsheet syntax documentation
+open https://github.com/denisidoro/navi/blob/master/docs/cheatsheet/syntax/README.md
+
+# Edit cheatsheet
+nedit <command>
+
+# Show cheatsheet
+show <command>
+
+# Show cheatsheet path
+navi info cheats-path
+
+# Show cheatsheet from cheat.sh
+navi --cheatsh <query>
+
+$ command: ls -1 ~/.local/share/navi/cheats | sed -e 's/\.cheat$//'

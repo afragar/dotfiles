@@ -1,0 +1,32 @@
+% chezmoi
+
+# Create new repo for managed files
+chezmoi init
+
+# Manage file
+chezmoi add <file>
+
+# Edit managed copy of file
+chezmoi edit <file>
+
+# Show changes in managed files
+chezmoi diff
+
+# Apply changes in managed files to originals
+chezmoi apply
+
+# Apply changes in original file to managed copy
+chezmoi re-add <file>
+
+# Apply all changes in original files to managed copies
+chezmoi-reverse-apply
+
+# Open subshell in managed repo (!! must later exit !!)
+chezmoi cd 
+
+# Determine if in subshell and need to exit
+shell_status
+
+# Exit sub-shell from managed repo
+exit
+

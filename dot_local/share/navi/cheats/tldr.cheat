@@ -1,0 +1,7 @@
+% tldr
+
+# Show simplified man page
+tldr <command>
+
+$ command: tldr --list
+
