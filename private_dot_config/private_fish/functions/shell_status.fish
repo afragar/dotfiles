@@ -1,6 +1,9 @@
 function shell_status
-    # Get the name of the parent process
-    set parent_cmd (ps -p (ps -p %self -o ppid=) -o comm=)
+    # Get parent process ID
+    set ppid (ps -p %self -o ppid= | string trim)
+
+    # Get parent process command name
+    set parent_cmd (ps -p $ppid -o comm= | string trim)
 
     if test "$parent_cmd" = chezmoi
         echo "You are inside the chezmoi subshell. Type 'exit' to leave."
