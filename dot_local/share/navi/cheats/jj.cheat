@@ -15,7 +15,7 @@ jj log
 # Show complete version history
 jj log --revisions 'all()'
 
-# Briefly describe working copy and create new working copy
+# Succinctly describe working copy and create new working copy
 jj commit -m <description>
 
 # Fully describe working copy and create new working copy

@@ -9,10 +9,10 @@ chezmoi add <file>
 # Edit managed copy of file
 chezmoi edit <file>
 
-# Show changes in managed files
+# Show all changes in managed copies
 chezmoi diff
 
-# Apply changes in managed files to originals
+# Apply all changes in managed copies to originals
 chezmoi apply
 
 # Apply changes in original file to managed copy

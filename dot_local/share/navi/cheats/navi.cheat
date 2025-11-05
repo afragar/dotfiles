@@ -7,7 +7,7 @@ open https://github.com/denisidoro/navi/blob/master/docs/cheatsheet/syntax/READM
 nedit <command>
 
 # Show cheatsheet
-show <command>
+nshow <command>
 
 # Show cheatsheet path
 navi info cheats-path
