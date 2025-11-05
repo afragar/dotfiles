@@ -1,0 +1,29 @@
+%YAML 1.2
+---
+name: Navi Cheat
+file_extensions:
+  - cheat
+scope: source.navi
+
+contexts:
+  main:
+    # Lines starting with ';' -> Comment
+    - match: '^;.*$'
+      scope: comment.line.navi
+
+    # Lines starting with '%' -> Statement (or keyword)
+    - match: '^\%.*$'
+      scope: keyword.control.navi
+
+    # Lines starting with '#' -> Operator or directive
+    - match: '^\#.*$'
+      scope: keyword.operator.navi
+
+    # Lines starting with '$' -> String (or command)
+    - match: '^\$.*$'
+      scope: string.quoted.other.navi
+
+    # Words in angle brackets -> placeholders, like <foo>
+    - match: '<[^>]+>'
+      scope: string.interpolated.navi
+
