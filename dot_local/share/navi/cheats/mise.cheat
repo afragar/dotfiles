@@ -1,0 +1,11 @@
+% mise
+
+# Verify that mise installation is ok
+mise doctor
+
+# Show available tool versions
+mise ls-remote <tool>
+
+# Set an environment variable
+mise set <variable>=<value>
+

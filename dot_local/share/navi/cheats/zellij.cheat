@@ -1,0 +1,16 @@
+% zellij
+
+# Start new session
+zellij
+
+# List running sessions
+zellij list-sessions
+
+# Attach to session
+zellij attach <session>
+
+# Delete session
+zellij delete-session <session>
+
+$ session: zellij list-sessions --short --no-formatting
+

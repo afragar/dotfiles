@@ -1,0 +1,5 @@
+% visudo
+
+# Edit local sudoers file
+sudo TERM=xterm-256color visudo -f /etc/sudoers.d/<command>
+

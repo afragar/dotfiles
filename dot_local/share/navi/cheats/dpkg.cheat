@@ -1,0 +1,14 @@
+% dpkg
+
+# List files from package
+dpkg --listfiles <package>
+
+# Find package which installs file
+dpkg --search <file>
+
+# Provide information about package
+dpkg --status <package>
+
+# List packages which match pattern
+dpkg --list <pattern>
+

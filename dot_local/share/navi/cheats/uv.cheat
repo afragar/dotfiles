@@ -1,0 +1,50 @@
+% uv
+
+# Add inline script metadata to single-file script
+uv init --script <script>
+
+# Add dependency to single-file script
+uv add --script <script> <dependency>
+
+# Remove dependency from single-file script
+uv remove --script <script> <dependency>
+
+# Show dependency versions for single-file script
+uv export --script <script>
+
+# Install command-line tool from Python package
+uv tool install <package>
+
+# Uninstall command-line tool
+uv tool uninstall <package>
+
+# Install xonsh with packages
+uv tool install xonsh[full] --with pexpect --with chess
+
+# List installed command-line tools from Python packages
+uv tool list
+
+# Show available Python versions
+uv python list
+
+# Show installed Python versions
+uv python find
+
+# Show cache directory path
+uv cache dir
+
+# Show tool directory path
+uv tool dir
+
+# Show installed Python versions path
+uv python dir
+
+# Update uv to latest version
+uv self update
+
+# Show uv version
+uv self version
+
+# Upgrade all uv-managed Python version
+uv python upgrade
+

@@ -12,6 +12,9 @@ jj git init --colocate
 # Show version history
 jj log
 
+# Show detailed version history
+jj evolog
+
 # Show complete version history
 jj log --revisions 'all()'
 
@@ -41,4 +44,19 @@ jj bookmark move main --to @-
 
 # Create local copy of remote repo
 jj git clone <source> <destination>
+
+# Reseats working copy on top of fetched changes
+jj rebase -b <working-copy> -d <fetched-change-id>
+
+# List all commands
+jj --help
+
+# Open commit for further editing
+jj edit <commit>
+
+# Squash working commit into parent commit
+jj squash
+
+# Hide commit from log and rebase descendants
+jj abandon <commit>
 
